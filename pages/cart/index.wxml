@@ -1,2 +1,56 @@
-<!--pages/cart/index.wxml-->
-<text>pages/cart/index.wxml</text>
+<view class="container">
+<!-- 收货地址 -->
+<view class="address">
+  <view class="address-info">
+    <text>收货人:魂殇幽影</text>
+    <text>18207649766</text>
+  </view>
+  <view class="detailed-address">
+    收货地址:广东省广州市天河区
+  </view>
+  <image class="border" src="../../images/cart_border@2x.png"></image>
+</view>
+<!-- 购物车列表头部 -->
+<view class="cart-title">
+  <view class="iconfont icon-dianpu"></view>
+  <text>物美价廉生活馆</text>
+</view>
+<!-- 购物车列表 -->
+<view class="goods-item">
+  <icon class="selected" type="success" size="16" color="red"> </icon>
+
+  <view class="goods-info">
+    <image mode="aspectFill" src="http://image2.suning.cn/uimg/b2c/newcatentries/0000000000-000000000826147951_1_400x400.jpg">
+    </image>
+
+    <!-- 商品价格和详细信息 -->
+    <view class="goods-right">
+      <!-- 标题 -->
+      <view class="goods-title">听说你最近过着想要的生活,也是听朋友告诉我,我一直听着突然泪眼婆娑,来证明和你爱恋过</view>
+      <!-- 计算和计算数量 -->
+      <view class="goods-right-btm">
+        <view class="goods-price">
+          <text>¥ 99.00</text>
+        </view>
+        <!-- 计算数量 -->
+        <view class="goods-nums">
+          <view class="goods-nums-btn">-</view>
+          <text>3</text>
+          <view class="goods-nums-btn">+</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 购物车底部 -->
+<view class="footer">
+  <view class="footer-left">
+    <icon type="success" size="16" color="red"></icon>全选
+  </view>
+  <view class="footer-center">
+    <view>合计: <text class="colorRed">¥ 33344.00</text> </view>
+    <text class="colorGray"> 包含运费</text>
+  </view>
+  <view class="footer-account">结算</view>
+</view>
+</view>

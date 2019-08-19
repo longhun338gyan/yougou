@@ -1,3 +1,4 @@
+@import  "./common/font.wxss";
 .search{
   padding: 20rpx;
   background: #ff2d4a;
