@@ -1,11 +1,12 @@
 <!--index.wxml-->
 <view>
   <!-- 搜索框 -->
-  <view class="search">
+  <!-- <view class="search">
     <view class="search-input">
       <icon type="search" size="16" />搜索
     </view>
-  </view>
+  </view> -->
+   <search/>
   <!-- 轮播图 -->
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-color="rgba(255,255,255,.3)" indicator-active-color="#fff" indicator-dots>
     <block wx:for="{{imgUrls}}" wx:key="{{index}}">

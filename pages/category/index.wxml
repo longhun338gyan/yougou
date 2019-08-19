@@ -1,10 +1,12 @@
 <view class="container">
   <!-- 搜索框 -->
-  <view class="search">
+  <!-- <view class="search">
     <view class="search-input">
       <icon type="search" size="16" />搜索
     </view>
-  </view>
+  </view> -->
+
+    <search/>
 
   <!-- 分页类容 -->
   <view class="main">
