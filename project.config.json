@@ -51,8 +51,8 @@
 				},
 				{
 					"id": 1,
-					"name": "pages/search_list/index",
-					"pathName": "pages/search_list/index",
+					"name": "pages/category/index",
+					"pathName": "pages/category/index",
 					"query": "",
 					"scene": null
 				}
