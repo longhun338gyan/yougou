@@ -22,15 +22,16 @@ class="swiper">
 <rich-text nodes="{{detail.goods_introduce}}"> </rich-text>
 <!-- 底部栏 -->
 <view class="footer-bar">
+    <button class="contact" open-type="contact" bindcontact="handleContact">联系客服</button>
   <!-- 左侧的图标 -->
     <view class="footer-bar-left">
       <view class="iconfont icon-kefu"> </view>
       <text>联系客服</text>
     </view>
-    <view class="footer-bar-left">
+    <navigator class="footer-bar-left" url="/pages/cart/index" open-type="switchTab" >
       <view class="iconfont icon-gouwuche"></view>
       <text>购物车</text>
-    </view>
+    </navigator>
 
   <!-- 右侧的按钮 -->
   <view class="footer-button">加入购物车</view>
