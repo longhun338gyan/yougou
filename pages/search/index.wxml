@@ -3,9 +3,12 @@
   <!-- 输入框 -->
   <view class="search-input">
     <icon type="search" size="16"></icon>
-    <input placeholder="请输入你想要的商品"></input>
+    <input placeholder="请输入你想要的商品"
+     value="{{inputValue}}" 
+     bindinput="handleInput"></input>
   </view>
-  <view class="cencel">取消</view>
+  <view class="cencel" wx:if="{{inputValue}}"
+  bindtap="handleCancel">取消</view>
 </view>
 <!-- 建议搜索列表 -->
 <view class="layer" wx:if="{{false}}">
