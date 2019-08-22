@@ -34,6 +34,6 @@ class="swiper">
     </navigator>
 
   <!-- 右侧的按钮 -->
-  <view class="footer-button">加入购物车</view>
+  <view class="footer-button" bindtap="handleAddCart">加入购物车</view>
   <view class="footer-button">立刻购买</view>
 </view>
