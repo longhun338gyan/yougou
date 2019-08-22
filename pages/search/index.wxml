@@ -5,19 +5,20 @@
     <icon type="search" size="16"></icon>
     <input placeholder="请输入你想要的商品"
      value="{{inputValue}}" 
-     bindinput="handleInput"></input>
+     bindinput="handleInput"
+     bindconfirm="handleConfirm"></input>
   </view>
   <view class="cencel" wx:if="{{inputValue}}"
   bindtap="handleCancel">取消</view>
 </view>
 <!-- 建议搜索列表 -->
-<view class="layer" wx:if="{{false}}">
+<!-- <view class="layer" wx:if="{{false}}">
   <navigator url="">电视</navigator>
   <navigator url="">空调</navigator>
   <navigator url="">冰箱</navigator>
   <navigator url="">音响</navigator>
   <navigator url="">厨具</navigator>
-</view>
+</view> -->
 
 <view class="search-content">
   <view class="search-title">
