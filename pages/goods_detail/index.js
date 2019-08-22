@@ -27,7 +27,7 @@ Page({
       }
     }).then(res=>{
       const  {message} =res.data;
-      console.log(res)
+      // console.log(res)
       this.setData({
         detail:message
       })
