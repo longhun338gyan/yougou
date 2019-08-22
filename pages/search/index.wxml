@@ -23,7 +23,7 @@
 <view class="search-content">
   <view class="search-title">
     <text>历史搜索</text>
-    <icon type="clear" size="16"></icon>
+    <icon type="clear" size="16" bindtap="handleClearAll"></icon>
   </view>
   <view class="history-list">
     <navigator url="/pages/search_list/index?keyword={{item}}"

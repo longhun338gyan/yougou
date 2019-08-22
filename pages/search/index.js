@@ -50,7 +50,18 @@ Page({
     wx.navigateTo({
       url: '/pages/search_list/index?keyword=' + this.data.inputValue
     })
+    //保存新的搜索关键字前,要把关键字添加进已有列表
+    const  arr= [this.data.inputValue,...this.data.history]
+    this.setData({
+      history:[...new Set(arr)]
+    })
 
-    wx.setStorageSync("history", [this.data.inputValue])
+    wx.setStorageSync("history", this.data.history)
+  },
+  handleClearAll(){
+    wx.removeStorageSync('history')
+    this.setData({
+      history:[]
+    })
   }
 })
