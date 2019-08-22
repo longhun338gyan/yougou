@@ -6,13 +6,20 @@ Page({
    */
   data: {
     inputValue: '', //输入框的值
+    history: [] //本地历史记录
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    //获取本地历史记录
+    const history = wx.getStorageSync("history")||[]
+                       
+  
+    this.setData({
+      history
+    })
   },
 
   //每次输入搜索关键字的时候触发
@@ -43,5 +50,7 @@ Page({
     wx.navigateTo({
       url: '/pages/search_list/index?keyword=' + this.data.inputValue
     })
+
+    wx.setStorageSync("history", [this.data.inputValue])
   }
 })

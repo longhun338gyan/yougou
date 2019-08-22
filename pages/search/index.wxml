@@ -26,11 +26,10 @@
     <icon type="clear" size="16"></icon>
   </view>
   <view class="history-list">
-    <navigator url="">华为</navigator>
-    <navigator url="">华为手机</navigator>
-    <navigator url="">华为机顶盒</navigator>
-    <navigator url="">华为电脑</navigator>
-    <navigator url="">华为路由器</navigator>
+    <navigator url="/pages/search_list/index?keyword={{item}}"
+    wx:for="{{history}}"
+    wx:key="index">{{item}}</navigator>
+  
   </view>
 
 </view>
