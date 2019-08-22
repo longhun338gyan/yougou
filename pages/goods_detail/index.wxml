@@ -1,21 +1,38 @@
-<swiper indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{imgUrls}}"
+<swiper indicator-dots
+class="swiper">
+  <block wx:for="{{detail.pics}}"
   wx:key="index">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      <image src="{{item.pics_big}}" class="slide-image" width="355" height="150"/>
     </swiper-item>
   </block>
 </swiper>
 <!-- 商品信息 -->
-<view class="goods-price"> ¥ 256</view>
+<view class="goods-price"> ¥ {{detail.goods_price}}</view>
 <view class="goods-info"> 
   <view class="goods-title">
-      spike 经典武士大马士革直刀(微型) 户外野营直刀 收藏礼品刀 饰品刀具    spike 经典武士大马士革直刀(微型) 户外野营直刀 收藏礼品刀 饰品刀具    spike 经典武士大马士革直刀(微型) 户外野营直刀 收藏礼品刀 饰品刀具
+   {{detail.goods_name}}
   </view>
 
   <view class="goods-star">
     <view class="iconfont icon-shoucang"></view>
     <view class="star-text">收藏</view>
    </view>
+</view>
+<rich-text nodes="{{detail.goods_introduce}}"> </rich-text>
+<!-- 底部栏 -->
+<view class="footer-bar">
+  <!-- 左侧的图标 -->
+    <view class="footer-bar-left">
+      <view class="iconfont icon-kefu"> </view>
+      <text>联系客服</text>
+    </view>
+    <view class="footer-bar-left">
+      <view class="iconfont icon-gouwuche"></view>
+      <text>购物车</text>
+    </view>
+
+  <!-- 右侧的按钮 -->
+  <view class="footer-button">加入购物车</view>
+  <view class="footer-button">立刻购买</view>
 </view>
